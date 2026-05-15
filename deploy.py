@@ -149,7 +149,7 @@ def country_report(country):
     plt.plot(x['Years'],x['Hours to do Tax'],label='To do Tax',lw=5,color='green')
     plt.fill_between(x['Years'],x['Hours to do Tax'],color='green',alpha=0.2)
   plt.title(f'Buisness Metrics',size=20,color='red')
-  plt.text(8,x['hours to start buisness'].max()-(x['hours to start buisness'].max()*1/4),f'Ease of Doing Buisness Rank\n{x['Ease of Business'].iloc[-1]}',size=10,color='red')
+  plt.text(8,x['hours to start buisness'].max()-(x['hours to start buisness'].max()*1/4),f'Ease of Doing Buisness Rank\n{x["Ease of Business"].iloc[-1]}',size=10,color='red')
   plt.ylabel('Hours',color='blue')
   plt.xlim(0,14)
   plt.xlabel('Years',color='blue')
