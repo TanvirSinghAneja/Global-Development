@@ -9,7 +9,7 @@ from sklearn.decomposition import PCA
 model=pickle.load(open('km.pkl','rb'))
 scale=pickle.load(open('scaler.pkl','rb'))
 pca=pickle.load(open('pca.pkl','rb'))
-df=pd.read_excel('/content/World_development_mesurement.xlsx')
+df=pd.read_excel('World_development_mesurement.xlsx')
 
 df['Business Tax Rate']=df['Business Tax Rate'].str.replace('%','')
 df['Business Tax Rate']=df['Business Tax Rate'].astype('float')
