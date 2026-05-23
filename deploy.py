@@ -200,7 +200,7 @@ def country_report(country):
   return fig
 
 st.set_page_config(layout='wide')
-st.title('GLobal Development Project')
+st.title('Global Development Project')
 tab1,tab2=st.tabs(['Country Report','Cluster Prediction'])
 
 df_com=df.drop(columns=['Years','Ease of Business'])
